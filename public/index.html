@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitness Tracker</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Fitness Tracker</h1>
+    </header>
+    <div class="content">
+      <div class="form-section">
+        <h2>Log Workout</h2>
+        <input type="text" id="exercise" placeholder="Exercise">
+        <input type="text" id="duration" placeholder="Duration (minutes)">
+        <input type="text" id="intensity" placeholder="Intensity (low, moderate, high)">
+        <button onclick="logWorkout()">Log Workout</button>
+        <button onclick="resetForm('log')">Reset</button> <!-- Add Reset button -->
+      </div>
+      <div class="form-section">
+        <h2>Set Goal</h2>
+        <input type="text" id="target" placeholder="Target (e.g., weight)">
+        <input type="text" id="frequency" placeholder="Exercise Frequency (per week)">
+        <button onclick="setGoal()">Set Goal</button>
+        <button onclick="resetForm('goal')">Reset</button> <!-- Add Reset button -->
+      </div>
+      <div class="progress-section">
+        <h2>Progress</h2>
+        <p id="goal-progress">No goals set</p>
+      </div>
+    </div>
+    <div class="workout-records">
+      <h2>Workout Records</h2>
+      <ul id="workout-list"></ul>
+    </div>
+  </div>
+
+</body>
+</html>
